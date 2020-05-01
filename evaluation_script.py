@@ -7,7 +7,7 @@ from PIL import Image
 
 lat = -35.363250
 lon = 149.165250
-image = imread('https://maps.googleapis.com/maps/api/staticmap?center=38.031627,-85.928664&zoom=18&scale=1&size=224x224&maptype=satellite&format=png&visual_refresh=true&key=AIzaSyClyhxQAs5U4Hvd1nHi992Gg6X5-BHRqWY')
+image = imread('https://maps.googleapis.com/maps/api/staticmap?center=38.031627,-85.928664&zoom=18&scale=1&size=224x224&maptype=satellite&format=png&visual_refresh=true&key=YourAPIKey')
 image = image[:,:,0:3]
 im = Image.fromarray(image)
 im.save("image.jpeg")
